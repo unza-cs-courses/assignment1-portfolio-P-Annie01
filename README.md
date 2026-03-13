@@ -125,24 +125,25 @@ Before submitting, verify:
 
 ---
 
-## Your Information
+## Our Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
+**Name:** Annie Phiri
+**Student ID:** 2022040694
+**Design Theme:** Futuristic Dark Professional. A sleek matte black theme with neon cyan and purple accents, utilizing glassmorphism effects for the header and modern CSS Grid/Flexbox layouts.
 
 ### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
+- [x] CSS Custom Properties
+- [x] Flexbox
+- [x] CSS Grid
+- [x] Media Queries
+- [x] Other: Glassmorphism (backdrop-filter), CSS Gradients, radial gradients for background depth.
 
 ### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
+One challenge I faced was ensuring the card images stayed responsive while maintaining a consistent height within the grid. I solved this by using a fixed-height container with `overflow: hidden` and `object-fit: cover` on the images. Another challenge was implementing the mobile-first navigation without a framework; I used a CSS-only hidden-by-default menu that appears on tablet screens and above using Flexbox.
 
 ### Credits
-[List any images, fonts, or resources used with attribution]
+- Fonts: Google Fonts (Inter, Outfit)
+- Inspiration: Modern portfolio designs from Awwwards and Dribbble.
 
 ---
 

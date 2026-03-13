@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description"
+        content="Professional portfolio of Annie Phiri - Web Developer and Designer specializing in futuristic, high-performance web experiences.">
+    <title>Annie Phiri | Creative Web Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!--
     ============================================================
@@ -24,19 +33,12 @@
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
+        <nav class="nav container">
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Annie<span> Phiri</span></a>
             </div>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -47,61 +49,58 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
+            <div class="hero__content container">
+                <h1 class="hero__title">Hi, I'm <span class="text-gradient">Annie Phiri</span></h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Creative Web Developer & Designer crafting high-performance, futuristic web experiences.
                 </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                    <a href="#contact" class="btn btn--outline">Let's Talk</a>
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
-                <h2>About Me</h2>
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
                 <div class="about__content">
-                    <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                    <div class="about__image-container">
+                        <img src="images/IScreenshots/Profile.jpeg" alt="Profile photo of Annie Phiri"
+                            class="about__image">
+                        <div class="about__image-glow"></div>
                     </div>
                     <div class="about__text">
-                        <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                        <p class="about__bio">
+                            Hello! I am Annie Phiri, a passionate and creative Web Developer dedicated to crafting
+                            stunning, futuristic, and high-performance digital experiences. My journey in technology
+                            began with a deep curiosity about how things work on the internet, which quickly blossomed
+                            into a profound love for coding and interactive design. I specialize in turning complex
+                            problems into elegant, user-friendly solutions that look extraordinary across all devices,
+                            from mobile phones to desktop computers.
                         </p>
-                        <h3>Skills</h3>
+                        <p class="about__bio">
+                            With a strong foundation in modern web technologies like HTML5, CSS3, JavaScript (ES6+), and
+                            responsive design principles, I continuously strive to push the boundaries of what is
+                            possible on the web. I am particularly fascinated by frontend development, where I can blend
+                            logical structure with visual artistry to create immersive interfaces. Whether developing
+                            dynamic e-commerce platforms, real-time analytics dashboards, or sleek portfolio websites, I
+                            focus intensely on performance optimization, clean code architecture, and accessibility.
+                        </p>
+                        <p class="about__bio">
+                            I am an avid learner, constantly exploring new frameworks and design trends to stay at the
+                            cutting edge of the industry. My ultimate goal is to collaborate with forward-thinking teams
+                            to build innovative digital products that not only meet user needs but exceed their
+                            expectations. I am excited to tackle new challenges and bring transformative digital visions
+                            to life.
+                        </p>
+                        <h3 class="skills-title">Technical Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li><span class="skill-badge">HTML5</span></li>
+                            <li><span class="skill-badge">CSS3</span></li>
+                            <li><span class="skill-badge">JavaScript (ES6+)</span></li>
+                            <li><span class="skill-badge">Responsive Design</span></li>
+                            <li><span class="skill-badge">Flexbox & Grid</span></li>
                         </ul>
                     </div>
                 </div>
@@ -110,28 +109,23 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
-                <h2>My Projects</h2>
+                <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <div class="project-card__image-container">
+                            <img src="images/project1.jpg" alt="Screenshot of CyberDash Dashboard"
+                                class="project-card__image">
+                        </div>
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                            <h3 class="project-card__title">CyberDash Pro</h3>
+                            <p class="project-card__description">
+                                A high-performance analytics dashboard for crypto traders, featuring real-time data
+                                visualization and trade signals.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
@@ -139,16 +133,18 @@
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <div class="project-card__image-container">
+                            <img src="images/project2.jpg" alt="Screenshot of NeonCommerce Storefront"
+                                class="project-card__image">
+                        </div>
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                            <h3 class="project-card__title">NeonCommerce</h3>
+                            <p class="project-card__description">
+                                Futuristic e-commerce platform for high-end streetwear, built with a focus on immersive
+                                UI and fast loading speeds.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
@@ -156,106 +152,74 @@
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <div class="project-card__image-container">
+                            <img src="images/project3.jpg" alt="Screenshot of Stellar Chat UI"
+                                class="project-card__image">
+                        </div>
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                            <h3 class="project-card__title">Stellar Chat</h3>
+                            <p class="project-card__description">
+                                AI-powered chat application with a focus on privacy and seamless cross-platform
+                                communication.
                             </p>
                             <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--primary">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- TODO: Add more project cards if desired -->
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <div class="contact__container">
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Your Name"
+                                minlength="2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="What is this regarding?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input" required rows="5"
+                                placeholder="Your message..." minlength="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
-        <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <div class="container footer__content">
+            <div class="footer__info">
+                <p class="footer__copyright">&copy; 2026 <span class="text-gradient">Annie Phiri</span> All rights
+                    reserved.</p>
+            </div>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+                <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
             </nav>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
         </div>
     </footer>
 </body>
+
 </html>
